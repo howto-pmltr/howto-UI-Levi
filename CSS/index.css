@@ -126,12 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-header .logo {
-  width: 80%;
-}
-header .nav-link {
-  display: none;
-}
 .container {
   max-width: 500px;
   width: 100%;
@@ -150,8 +144,98 @@ header .nav-link {
 .container .cta-body .background-img {
   width: 100%;
 }
+.container .cta-body .cta-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding-bottom: 20px;
+  border-bottom: 3px double #333333;
+}
+.container .cta-body .cta-content h1 {
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.container .cta-body .cta-content h3 {
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+.container .cta-body .cta-content .cta-button {
+  background-color: #333333;
+  color: #dadddf;
+  border: 3px double #dadddf;
+  border-radius: 10px;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.container .cta-body .cta-content .cta-button:hover {
+  background-color: #dadddf;
+  color: #333333;
+  border: 3px double #333333;
+}
 .container .main-content {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.container .main-content .info {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333333;
+}
+header {
+  flex-flow: row nowrap;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 3px double #333333;
+}
+header .nav-opener {
+  padding-bottom: 5px;
+}
+header .nav-opener .logo {
+  width: 80%;
+}
+header .nav-opener i {
+  font-size: 3rem;
+  position: relative;
+  top: 5px;
+  left: 10%;
+  cursor: pointer;
+}
+header .nav-opener .fa-caret-up {
   display: none;
+}
+header .nav-opener .fa-caret-up--open {
+  display: inline-block;
+}
+header .nav-link {
+  display: none;
+}
+header .nav-link--open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 3px double #333333;
+}
+header .about-link {
+  margin-top: 5px;
 }
 * {
   box-sizing: border-box;
@@ -163,8 +247,11 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #dadddf;
+  color: #333333;
 }
-h1,
+h1 {
+  font-family: 'Allerta Stencil', sans-serif;
+}
 h2,
 h3,
 h4,
@@ -172,11 +259,14 @@ h5 {
   font-family: 'Oxygen', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+}
+h3 {
+  font-size: 2rem;
 }
 h4 {
   font-size: 2.5rem;

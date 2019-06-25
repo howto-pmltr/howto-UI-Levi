@@ -14,9 +14,53 @@
         .background-img{
             width: 100%;
         }
+
+        .cta-content{
+            .displayFlex(center, center);
+            flex-flow: column nowrap;
+            padding-bottom: 20px;
+            border-bottom: 3px double @charcoal;
+
+            h1{
+                .paddingTandB(0px, 20px);
+            }
+
+            h3{
+                .paddingTandB(5px, 30px);
+            }
+            
+            .cta-button{
+                background-color: @charcoal;
+                color: @neutral;
+                border: 3px double @neutral;
+                border-radius: 10px;
+                padding: 10px 32px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 2rem;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+
+            .cta-button:hover{
+                background-color: @neutral;
+                color: @charcoal;
+                border: 3px double @charcoal;
+            }
+        }
     }
 
     .main-content{
-        display: none;
+        
+        .paddingTandB(30px, 50px);
+
+        .info{
+            width: 100%;
+            .paddingLandR(10px, 10px);
+            .paddingTandB(30px, 20px);
+            border-bottom: 1px solid @charcoal;
+            
+        }
     }
 }

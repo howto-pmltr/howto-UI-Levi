@@ -1,9 +1,48 @@
 header{
-    .logo{
-        width: 80%;
-    }
+    flex-flow: row nowrap;
+    .paddingTandB(10px, 5px);
+    .paddingLandR(10px, 10px);
+    border-bottom: 3px double @charcoal;
+    .nav-opener{
+        padding-bottom: 5px;
+        
+        .logo{
+            width: 80%;
+        }
     
+        i{
+           font-size: 3rem;
+           position: relative;
+           top: 5px;
+           left: 10%;
+           cursor: pointer;
+        }
+    
+        .fa-caret-up{
+            display: none;
+        }
+    
+        .fa-caret-up--open{
+            display: inline-block;
+        }
+    }
+
     .nav-link{
         display: none;
+    }
+
+    .nav-link--open{
+        .displayFlex(center, center);
+        flex-flow: column nowrap;
+        width: 100%;
+        margin: 0 auto;
+        text-decoration: none;
+        font-size: 2rem;
+        .paddingTandB(10px, 10px);
+        border-top: 3px double @charcoal;
+    }
+
+    .about-link{
+        margin-top: 5px;
     }
 }
