@@ -6,6 +6,13 @@
     width: 96%;
     padding-bottom: 50px;
 
+    @media @desktop{
+        max-width: 1000px;
+        width: 96%;
+        .displayFlex(space-evenly, center);
+        flex-flow: row nowrap;
+    }
+
     .development{
 
         .paddingTandB(20px, 20px);
@@ -46,5 +53,9 @@
 
     .andy-profile{
         border-bottom: 3px double @charcoal;
+
+        @media @desktop {
+            border-bottom: 1px solid @charcoal;
+        }
     }
 }

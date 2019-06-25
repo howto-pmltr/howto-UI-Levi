@@ -12,8 +12,9 @@ class NavLink {
     }
 
     caretFlip() {
-        this.caretIcons.forEach((icon) => icon.classList.toggle('caret-open'));
-    }
+        this.caretIcons.forEach((icon) => {
+            icon.classList.toggle('caret-open');
+    })};
   }
  
   

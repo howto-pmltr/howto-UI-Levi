@@ -5,6 +5,11 @@
     flex-flow: column nowrap;
     margin: 0 auto;
 
+    @media @desktop {
+        max-width: 1000px;
+        width: 96%;
+    }
+
     .cta-body{
         background-image: url(undraw_reading_0re1.png);
         background-repeat: no-repeat;
@@ -66,7 +71,27 @@
             .paddingLandR(10px, 10px);
             .paddingTandB(30px, 20px);
             border-bottom: 1px solid @charcoal;
-            
+
+            @media @desktop {
+                .displayFlex(space-evenly, center);
+                flex-flow: row nowrap;
+
+                img {
+                    width: 50%;
+                }
+            }            
+        }
+
+        @media @desktop {
+            flex-flow: row wrap;
+
+            .find, .share{
+                flex-direction: row-reverse;
+            }
+
+            h2, p{
+                text-align: center;
+            }
         }
     }
 }
