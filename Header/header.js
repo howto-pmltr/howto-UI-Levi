@@ -1,6 +1,6 @@
 class NavLink {
     constructor(domElement) {
-      this.domElement = domElement; 
+      this.domElement = domElement;
       this.expandButton = document.querySelector('.caret-open');
       this.caretIcons = document.querySelectorAll('.fas');
       this.expandButton.addEventListener('click', this.expandLinks.bind(this));

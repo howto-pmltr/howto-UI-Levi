@@ -15,24 +15,20 @@
         text-align: center;
         padding-bottom: 20px;
         border-bottom: 3px double @charcoal;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .team-member{
 
-        .displayFlex(center, center);
+        .displayFlex(space-evenly, center);
         flex-flow: row nowrap;
         .paddingTandB(20px, 20px);
         border-bottom: 1px solid @charcoal;
 
         .profile-text{
             .displayFlex(center, center);
-            flex-flow: row wrap;
-            width: 70%;
-
-            h4, p{
-                .displayFlex(center, center);
-            }
+            flex-flow: column wrap;
+            width: 60%;
         }
         
         .profile-pic{
@@ -42,20 +38,13 @@
             justify-content: flex-start;
         }
 
-        p{
-            width: 75%;
+        .git-link{
+            font-size: 4rem;
+            padding-right: 10px;
         }
     }
 
     .andy-profile{
         border-bottom: 3px double @charcoal;
-    }
-
-    .git-link{
-        font-size: 4rem;
-        position: relative;
-        bottom: 30px;
-        left: 5%;
-        padding-right: 10px;
     }
 }

@@ -215,11 +215,11 @@ table {
   text-align: center;
   padding-bottom: 20px;
   border-bottom: 3px double #333333;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .team-list .team-member {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-flow: row nowrap;
   padding-top: 20px;
@@ -230,14 +230,8 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  width: 70%;
-}
-.team-list .team-member .profile-text h4,
-.team-list .team-member .profile-text p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: column wrap;
+  width: 60%;
 }
 .team-list .team-member .profile-pic {
   width: 30%;
@@ -247,18 +241,12 @@ table {
   padding-right: 10px;
   justify-content: flex-start;
 }
-.team-list .team-member p {
-  width: 75%;
+.team-list .team-member .git-link {
+  font-size: 4rem;
+  padding-right: 10px;
 }
 .team-list .andy-profile {
   border-bottom: 3px double #333333;
-}
-.team-list .git-link {
-  font-size: 4rem;
-  position: relative;
-  bottom: 30px;
-  left: 5%;
-  padding-right: 10px;
 }
 header {
   flex-flow: row nowrap;
