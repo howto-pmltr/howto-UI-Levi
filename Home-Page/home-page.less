@@ -1,0 +1,97 @@
+.container {
+    max-width: 500px;
+    width: 96%;
+    .displayFlex(center, center);
+    flex-flow: column nowrap;
+    margin: 0 auto;
+
+    @media @desktop {
+        max-width: 1000px;
+        width: 96%;
+    }
+
+    .cta-body{
+        background-image: url(undraw_reading_0re1.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+
+        .background-img{
+            width: 100%;
+        }
+
+        .cta-content{
+            .displayFlex(center, center);
+            flex-flow: column nowrap;
+            padding-bottom: 20px;
+            border-bottom: 3px double @charcoal;
+
+            h1{
+                .paddingTandB(0px, 20px);
+            }
+
+            h3{
+                .paddingTandB(5px, 30px);
+            }
+            
+            .cta-button{
+                background-color: @charcoal;
+                color: @neutral;
+                border: 3px double @neutral;
+                border-radius: 10px;
+                padding: 10px 32px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 2rem;
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+
+            .cta-button:hover{
+                background-color: @neutral;
+                color: @charcoal;
+                border: 3px double @charcoal;
+            }
+        }
+    }
+
+    .main-content{
+        display: none;
+    }
+
+    .main-content--open{
+        
+        .displayFlex(center, center);
+        flex-flow: column wrap;
+        .paddingTandB(30px, 50px);
+
+        .info{
+            width: 100%;
+            .paddingLandR(10px, 10px);
+            .paddingTandB(30px, 20px);
+            border-bottom: 1px solid @charcoal;
+
+            @media @desktop {
+                .displayFlex(space-evenly, center);
+                flex-flow: row nowrap;
+
+                img {
+                    width: 50%;
+                }
+            }            
+        }
+
+        @media @desktop {
+            flex-flow: row wrap;
+
+            .find, .share{
+                flex-direction: row-reverse;
+            }
+
+            h2, p{
+                text-align: center;
+            }
+        }
+    }
+}

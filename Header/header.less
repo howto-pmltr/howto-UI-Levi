@@ -1,0 +1,97 @@
+header{
+
+    .displayFlex(center, center);
+    flex-flow: column nowrap;
+    .paddingTandB(10px, 0px);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 3px double @charcoal;
+
+    .nav-opener{
+        padding-bottom: 10px;
+        .displayFlex(space-evenly, center);
+        flex-flow: row nowrap;
+
+        @media @desktop{
+            .displayFlex(space-between, center);
+            flex-direction: row-reverse;
+        }
+
+        a{
+            @media @desktop{
+                width: 40%;
+            }
+        }
+
+        .logo{
+            width: 80%;
+
+            @media @desktop{
+                width: 100%;
+                align-self: flex-start;
+            }
+        }
+    
+        i{
+           font-size: 3.5rem;
+           .displayFlex(space-evenly, center);
+           flex-flow: row nowrap;
+           cursor: pointer;
+        }
+
+        .header-icons{
+            @media @desktop{
+                .displayFlex(center, center);
+                flex-flow: column wrap;
+                padding-left: 5%;
+                padding-top: 20px;
+            }
+        }
+
+        .fa-bars{
+            display: none;
+
+            @media @desktop{
+                display: flex;
+            }
+        }
+    
+        .fa-caret-up{
+            display: none;
+        }
+        
+        .fa-caret-down{
+            display: none;
+        }
+    
+        .caret-open{
+            display: flex;
+        }
+    }
+
+    nav{
+
+        max-width: 500px;
+        width: 100%;
+
+        @media @desktop{
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .nav-link{
+            display: none;
+        }
+
+        .nav-link--open{
+            .displayFlex(space-evenly, center);
+            flex-flow: column wrap;
+            width: 100%;
+            margin: 0 auto;
+            text-decoration: none;
+            font-size: 2rem;
+            .paddingTandB(10px, 10px);
+            border-top: 3px double @charcoal;
+        }
+    }
+}
