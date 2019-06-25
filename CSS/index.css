@@ -191,6 +191,68 @@ table {
   padding-bottom: 20px;
   border-bottom: 1px solid #333333;
 }
+.team-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  max-width: 500px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.team-list .development {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.team-list h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 3px double #333333;
+  margin-bottom: 20px;
+}
+.team-list .team-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333333;
+}
+.team-list .team-member .profile-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 70%;
+}
+.team-list .team-member .profile-text h4,
+.team-list .team-member .profile-text p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-list .team-member .profile-pic {
+  width: 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: flex-start;
+}
+.team-list .team-member p {
+  width: 75%;
+}
+.team-list .andy-profile {
+  border-bottom: 3px double #333333;
+}
+.team-list .git-link {
+  font-size: 4rem;
+  position: relative;
+  bottom: 30px;
+  left: 5%;
+  padding-right: 10px;
+}
 header {
   flex-flow: row nowrap;
   padding-top: 10px;
@@ -236,6 +298,17 @@ header .nav-link--open {
 }
 header .about-link {
   margin-top: 5px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+footer .footer-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #621295;
 }
 * {
   box-sizing: border-box;

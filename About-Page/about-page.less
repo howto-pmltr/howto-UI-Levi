@@ -1,0 +1,61 @@
+.team-list{
+
+    .displayFlex(center, center);
+    flex-flow: row wrap;
+    max-width: 500px;
+    width: 100%;
+    padding-bottom: 50px;
+
+    .development{
+
+        .paddingTandB(20px, 20px);
+    }
+
+    h2{
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 3px double @charcoal;
+        margin-bottom: 20px;
+    }
+
+    .team-member{
+
+        .displayFlex(center, center);
+        flex-flow: row nowrap;
+        .paddingTandB(20px, 20px);
+        border-bottom: 1px solid @charcoal;
+
+        .profile-text{
+            .displayFlex(center, center);
+            flex-flow: row wrap;
+            width: 70%;
+
+            h4, p{
+                .displayFlex(center, center);
+            }
+        }
+        
+        .profile-pic{
+            width: 30%;
+            .paddingTandB(10px, 10px);
+            .paddingLandR(10px, 10px);
+            justify-content: flex-start;
+        }
+
+        p{
+            width: 75%;
+        }
+    }
+
+    .andy-profile{
+        border-bottom: 3px double @charcoal;
+    }
+
+    .git-link{
+        font-size: 4rem;
+        position: relative;
+        bottom: 30px;
+        left: 5%;
+        padding-right: 10px;
+    }
+}
