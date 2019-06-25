@@ -128,12 +128,12 @@ table {
 }
 .container {
   max-width: 500px;
-  width: 100%;
+  width: 96%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  position: relative;
+  margin: 0 auto;
 }
 .container .cta-body {
   background-image: url(undraw_reading_0re1.png);
@@ -180,10 +180,17 @@ table {
   border: 3px double #333333;
 }
 .container .main-content {
+  display: none;
+}
+.container .main-content--open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
   padding-top: 30px;
   padding-bottom: 50px;
 }
-.container .main-content .info {
+.container .main-content--open .info {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -197,7 +204,7 @@ table {
   align-items: center;
   flex-flow: row wrap;
   max-width: 500px;
-  width: 100%;
+  width: 96%;
   padding-bottom: 50px;
 }
 .team-list .development {
@@ -256,13 +263,13 @@ table {
 header {
   flex-flow: row nowrap;
   padding-top: 10px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-bottom: 3px double #333333;
 }
 header .nav-opener {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 header .nav-opener .logo {
   width: 80%;
@@ -277,7 +284,10 @@ header .nav-opener i {
 header .nav-opener .fa-caret-up {
   display: none;
 }
-header .nav-opener .fa-caret-up--open {
+header .nav-opener .fa-caret-down {
+  display: none;
+}
+header .nav-opener .caret-open {
   display: inline-block;
 }
 header .nav-link {
@@ -296,14 +306,12 @@ header .nav-link--open {
   padding-bottom: 10px;
   border-top: 3px double #333333;
 }
-header .about-link {
-  margin-top: 5px;
-}
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  margin-top: 50px;
 }
 footer .footer-link {
   font-size: 1.5rem;

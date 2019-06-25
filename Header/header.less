@@ -1,11 +1,12 @@
 header{
     flex-flow: row nowrap;
-    .paddingTandB(10px, 5px);
-    .paddingLandR(10px, 10px);
+    .paddingTandB(10px, 0px);
+    margin-left: 10px;
+    margin-right: 10px;
     border-bottom: 3px double @charcoal;
     .nav-opener{
-        padding-bottom: 5px;
-        
+        padding-bottom: 10px;
+
         .logo{
             width: 80%;
         }
@@ -21,8 +22,12 @@ header{
         .fa-caret-up{
             display: none;
         }
+        
+        .fa-caret-down{
+            display: none;
+        }
     
-        .fa-caret-up--open{
+        .caret-open{
             display: inline-block;
         }
     }
@@ -40,9 +45,5 @@ header{
         font-size: 2rem;
         .paddingTandB(10px, 10px);
         border-top: 3px double @charcoal;
-    }
-
-    .about-link{
-        margin-top: 5px;
     }
 }

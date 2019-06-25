@@ -1,9 +1,9 @@
 .container {
     max-width: 500px;
-    width: 100%;
+    width: 96%;
     .displayFlex(center, center);
     flex-flow: column nowrap;
-    position: relative;
+    margin: 0 auto;
 
     .cta-body{
         background-image: url(undraw_reading_0re1.png);
@@ -52,7 +52,13 @@
     }
 
     .main-content{
+        display: none;
+    }
+
+    .main-content--open{
         
+        .displayFlex(center, center);
+        flex-flow: column wrap;
         .paddingTandB(30px, 50px);
 
         .info{
