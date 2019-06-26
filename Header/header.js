@@ -1,21 +1,27 @@
 class NavLink {
     constructor(domElement) {
       this.domElement = domElement;
-      this.expandButton = document.querySelector('.caret-open');
-      this.caretIcons = document.querySelectorAll('.fas');
-      this.expandButton.addEventListener('click', this.expandLinks.bind(this));
-      this.expandButton.addEventListener('click', this.caretFlip.bind(this));
-    }
+      this.caretIcon = document.querySelector('#shown-icon');
+      console.log(this.caretIcon);
+      this.caretIcon.addEventListener('click', this.expandLinks.bind(this));
+    };
   
     expandLinks() {
       this.domElement.classList.toggle('nav-link--open');
-    }
+    };
 
-    caretFlip() {
-        this.caretIcons.forEach((icon) => {
-            icon.classList.toggle('caret-open');
-    })};
-  }
+    // caretFlip() {
+    //     if(this.upIcon.style.display ==  "none") {
+    //         this.upIcon.style.display = "flex";
+    //         this.downIcon.style.display = "none";
+    //         console.log('Down');
+    //     } else {
+    //         this.upIcon.style.display = "none";
+    //         this.downIcon.style.display = "flex";
+    //         console.log('up');
+    //     }
+    // };
+};
  
   
   let navLinks = document.querySelectorAll('.nav-link');
@@ -23,3 +29,5 @@ class NavLink {
   navLinks.forEach((link) => {
     return new NavLink(link);
   });
+
+  
