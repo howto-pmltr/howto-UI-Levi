@@ -1,97 +1,107 @@
-.team-list{
+.container{
+    opacity: 0;
 
-    .displayFlex(center, center);
-    flex-flow: row wrap;
-    max-width: 500px;
-    width: 96%;
-    padding-bottom: 50px;
+    .team-list{
 
-    @media @desktop{
-        max-width: 1000px;
-        width: 98%;
         .displayFlex(center, center);
-        flex-flow: row nowrap;
-    }
+        flex-flow: row wrap;
+        max-width: 500px;
+        width: 96%;
+        padding-bottom: 50px;
 
-    .development{
-
-        .paddingTandB(20px, 20px);
         @media @desktop{
-            max-width: 500px;
-            width: 100%;
-            margin-left: 0px;
-            margin-right: 0px;
-            border-right: 3px double @charcoal;
-        }
-    }
-
-    h2{
-        text-align: center;
-        padding-bottom: 20px;
-        border-bottom: 3px double @charcoal;
-        margin-bottom: 10px;
-        @media @desktop{
-            width: 100%;
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-    }
-
-    .marketing{
-        .paddingTandB(0px, 20px);
-        @media @desktop{
-            padding-top: 20px;
-            max-width: 500px;
-            width: 100%;
-            margin-left: 0px;
-            margin-right: 0px;
+            max-width: 1000px;
+            width: 98%;
+            .displayFlex(center, center);
+            flex-flow: row nowrap;
+            border-top: 1px solid @charcoal;
         }
 
-        .ui {
+        .development{
+
+            .paddingTandB(20px, 20px);
+            border-top: 3px double @charcoal;
+            
             @media @desktop{
-                padding-right: 1px;
+                max-width: 500px;
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+                border-right: 3px double @charcoal;
+                border-top: 0px;
+                padding-bottom: 0px;
             }
         }
-    }
 
-    .team-member{
-
-        .displayFlex(space-evenly, center);
-        flex-flow: row nowrap;
-        .paddingTandB(20px, 20px);
-        border-bottom: 1px solid @charcoal;
-
-        @media @desktop{
-            max-width: 500px;
-            width: 100%;
-            margin-left: 0px;
-            margin-right: 0px;
+        h2{
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px double @charcoal;
+            margin-bottom: 10px;
+            @media @desktop{
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
         }
 
-        .profile-text{
-            .displayFlex(center, center);
-            flex-flow: column wrap;
-            width: 60%;
-        }
-        
-        .profile-pic{
-            width: 30%;
-            .paddingTandB(10px, 10px);
-            .paddingLandR(10px, 10px);
-            justify-content: flex-start;
+        .marketing{
+            .paddingTandB(0px, 20px);
+            @media @desktop{
+                padding-top: 20px;
+                max-width: 500px;
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-bottom: 0px;
+            }
+
+            .ui {
+                @media @desktop{
+                    padding-right: 1px;
+                }
+            }
         }
 
-        .git-link{
-            font-size: 4rem;
-            padding-right: 10px;
-        }
-    }
+        .team-member{
 
-    .andy-profile{
-        border-bottom: 3px double @charcoal;
-
-        @media @desktop {
+            .displayFlex(space-evenly, center);
+            flex-flow: row nowrap;
+            .paddingTandB(20px, 20px);
             border-bottom: 1px solid @charcoal;
+
+            @media @desktop{
+                max-width: 500px;
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .profile-text{
+                .displayFlex(center, center);
+                flex-flow: column wrap;
+                width: 60%;
+            }
+            
+            .profile-pic{
+                width: 30%;
+                .paddingTandB(10px, 10px);
+                .paddingLandR(10px, 10px);
+                justify-content: flex-start;
+            }
+
+            .git-link{
+                font-size: 4rem;
+                padding-right: 10px;
+            }
+        }
+
+        .andy-profile{
+            border-bottom: 3px double @charcoal;
+
+            @media @desktop {
+                border-bottom: 1px solid @charcoal;
+            }
         }
     }
 }

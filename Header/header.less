@@ -5,20 +5,22 @@ header{
     .paddingTandB(10px, 0px);
     margin-left: 10px;
     margin-right: 10px;
-    border-bottom: 3px double @charcoal;
 
     @media @desktop{
-        width: 98%;
+        max-width: 1000px;
+        width: 100%;
     }
 
     .nav-opener{
         padding-bottom: 10px;
         .displayFlex(space-evenly, center);
         flex-flow: row nowrap;
+        border-bottom: 3px double @charcoal;
 
         @media @desktop{
             .displayFlex(space-between, center);
             flex-direction: row-reverse;
+            width: 98%;
         }
 
         a{
@@ -65,7 +67,7 @@ header{
         }
         
         .fa-caret-down{
-            display: flex;
+            display: none;
         }
     
         .caret-open{
@@ -80,14 +82,11 @@ header{
 
         @media @desktop{
             max-width: 1000px;
-            width: 100%;
+            width: 98%;
         }
 
         .nav-link{
-            display: none;
-        }
-
-        .nav-link--open{
+            opacity: 0;
             .displayFlex(space-evenly, center);
             flex-flow: column wrap;
             width: 100%;
@@ -95,7 +94,12 @@ header{
             text-decoration: none;
             font-size: 2rem;
             .paddingTandB(10px, 10px);
-            border-top: 3px double @charcoal;
+            border-bottom: 3px double @charcoal;
+            transition: opacity 0.5s linear;
+        }
+
+        .nav-link--open{
+            opacity: 1;
         }
     }
 }

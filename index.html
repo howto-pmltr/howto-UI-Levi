@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Assets/favicon.ico"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/index.css">
     <!--JavaScript-->
     <script src="Header/header.js" async></script>
-    <script src="Footer/footer.js" async></script>
     <script src="Home-Page/home-page.js" async></script>
     </head>
     <body>
@@ -26,10 +26,10 @@
                     <div class="nav-opener">
                         <a href="index.html"><img class="logo" src="Assets/HowTo Logo.png" alt="Header Logo"></a>
                         <div class="header-icons">
-                        <i class="fas fa-bars"></i>
                         <div id="shown-icon">
-                        <i class="fas fa-caret-down caret-open"></i>
-                        <i class="fas fa-caret-up"></i>
+                        <i class="fas fa-bars"></i>
+                        <i id="down-caretI" class="fas fa-caret-down caret-open"></i>
+                        <i id="up-caretI" class="fas fa-caret-up"></i>
                         </div>
                         </div>
                     </div>
@@ -39,7 +39,6 @@
                     </nav>
                 </header>  
                 <div class="cta-body">
-                    <img class="background-img" src ="Assets/undraw_reading_0re1.png" alt="Main Image">
                     <div class="cta-content">
                         <h1>HOW TO</h1>
                         <h3>Proving That There IS Always a Better Way</h3>
