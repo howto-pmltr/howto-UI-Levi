@@ -219,6 +219,10 @@ table {
   padding-bottom: 20px;
   border-bottom: 1px solid #333333;
 }
+.container .main-content--open .info h2,
+.container .main-content--open .info p {
+  text-align: center;
+}
 @media (min-width: 800px) {
   .container .main-content--open .info {
     display: flex;
@@ -237,10 +241,6 @@ table {
   .container .main-content--open .find,
   .container .main-content--open .share {
     flex-direction: row-reverse;
-  }
-  .container .main-content--open h2,
-  .container .main-content--open p {
-    text-align: center;
   }
 }
 .container {
@@ -284,6 +284,7 @@ table {
 }
 .container .team-list h2 {
   text-align: center;
+  padding-top: 0px;
   padding-bottom: 20px;
   border-bottom: 3px double #333333;
   margin-bottom: 10px;
@@ -460,6 +461,7 @@ header nav .nav-link {
   margin: 0 auto;
   text-decoration: none;
   font-size: 2rem;
+  font-family: 'Allerta Stencil', sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 3px double #333333;
