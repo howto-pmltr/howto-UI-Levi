@@ -4,6 +4,8 @@
     .displayFlex(center, center);
     flex-flow: column nowrap;
     margin: 0 auto;
+    opacity: 0;
+    transition: opacity 2s linear;
 
     @media @desktop {
         max-width: 1000px;
@@ -11,27 +13,37 @@
     }
 
     .cta-body{
-        background-image: url(undraw_reading_0re1.png);
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-attachment: fixed;
+        max-width: 500px;
+        width: 98%;
 
-        .background-img{
+        @media @desktop{
+            max-width: 1000px;
             width: 100%;
         }
 
         .cta-content{
             .displayFlex(center, center);
             flex-flow: column nowrap;
-            padding-bottom: 20px;
+            padding-bottom: 100px;
             border-bottom: 3px double @charcoal;
+            background-image: url('../Assets/undraw_reading_0re1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+
+            @media @desktop{
+            max-width: 1000px;
+            width: 100%;
+            height: auto;
+            }
 
             h1{
                 .paddingTandB(0px, 20px);
             }
 
             h3{
-                .paddingTandB(5px, 30px);
+                .paddingTandB(5px, 200px);
             }
             
             .cta-button{
@@ -43,8 +55,8 @@
                 text-align: center;
                 text-decoration: none;
                 font-size: 2rem;
-                -webkit-transition-duration: 0.4s; /* Safari */
-                transition-duration: 0.4s;
+                -webkit-transition-duration: 2s; /* Safari */
+                transition-duration: 2s;
                 cursor: pointer;
             }
 
@@ -72,6 +84,10 @@
             .paddingTandB(30px, 20px);
             border-bottom: 1px solid @charcoal;
 
+            h2, p{
+                text-align: center;
+            }
+
             @media @desktop {
                 .displayFlex(space-evenly, center);
                 flex-flow: row nowrap;
@@ -89,9 +105,6 @@
                 flex-direction: row-reverse;
             }
 
-            h2, p{
-                text-align: center;
-            }
         }
     }
 }

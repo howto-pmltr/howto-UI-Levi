@@ -134,6 +134,8 @@ table {
   align-items: center;
   flex-flow: column nowrap;
   margin: 0 auto;
+  opacity: 0;
+  transition: opacity 2s linear;
 }
 @media (min-width: 800px) {
   .container {
@@ -142,21 +144,34 @@ table {
   }
 }
 .container .cta-body {
-  background-image: url(undraw_reading_0re1.png);
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: fixed;
+  max-width: 500px;
+  width: 98%;
 }
-.container .cta-body .background-img {
-  width: 100%;
+@media (min-width: 800px) {
+  .container .cta-body {
+    max-width: 1000px;
+    width: 100%;
+  }
 }
 .container .cta-body .cta-content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
   border-bottom: 3px double #333333;
+  background-image: url('../Assets/undraw_reading_0re1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+@media (min-width: 800px) {
+  .container .cta-body .cta-content {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+  }
 }
 .container .cta-body .cta-content h1 {
   padding-top: 0px;
@@ -164,7 +179,7 @@ table {
 }
 .container .cta-body .cta-content h3 {
   padding-top: 5px;
-  padding-bottom: 30px;
+  padding-bottom: 200px;
 }
 .container .cta-body .cta-content .cta-button {
   background-color: #333333;
@@ -175,9 +190,9 @@ table {
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
-  -webkit-transition-duration: 0.4s;
+  -webkit-transition-duration: 2s;
   /* Safari */
-  transition-duration: 0.4s;
+  transition-duration: 2s;
   cursor: pointer;
 }
 .container .cta-body .cta-content .cta-button:hover {
@@ -204,6 +219,10 @@ table {
   padding-bottom: 20px;
   border-bottom: 1px solid #333333;
 }
+.container .main-content--open .info h2,
+.container .main-content--open .info p {
+  text-align: center;
+}
 @media (min-width: 800px) {
   .container .main-content--open .info {
     display: flex;
@@ -223,12 +242,11 @@ table {
   .container .main-content--open .share {
     flex-direction: row-reverse;
   }
-  .container .main-content--open h2,
-  .container .main-content--open p {
-    text-align: center;
-  }
 }
-.team-list {
+.container {
+  opacity: 0;
+}
+.container .team-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,26 +256,66 @@ table {
   padding-bottom: 50px;
 }
 @media (min-width: 800px) {
-  .team-list {
+  .container .team-list {
     max-width: 1000px;
-    width: 96%;
+    width: 98%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
+    border-top: 1px solid #333333;
   }
 }
-.team-list .development {
+.container .team-list .development {
   padding-top: 20px;
   padding-bottom: 20px;
+  border-top: 3px double #333333;
 }
-.team-list h2 {
+@media (min-width: 800px) {
+  .container .team-list .development {
+    max-width: 500px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-right: 3px double #333333;
+    border-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+.container .team-list h2 {
   text-align: center;
+  padding-top: 0px;
   padding-bottom: 20px;
   border-bottom: 3px double #333333;
   margin-bottom: 10px;
 }
-.team-list .team-member {
+@media (min-width: 800px) {
+  .container .team-list h2 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.container .team-list .marketing {
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+@media (min-width: 800px) {
+  .container .team-list .marketing {
+    padding-top: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 800px) {
+  .container .team-list .marketing .ui {
+    padding-right: 1px;
+  }
+}
+.container .team-list .team-member {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -266,14 +324,22 @@ table {
   padding-bottom: 20px;
   border-bottom: 1px solid #333333;
 }
-.team-list .team-member .profile-text {
+@media (min-width: 800px) {
+  .container .team-list .team-member {
+    max-width: 500px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.container .team-list .team-member .profile-text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
   width: 60%;
 }
-.team-list .team-member .profile-pic {
+.container .team-list .team-member .profile-pic {
   width: 30%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -281,15 +347,15 @@ table {
   padding-right: 10px;
   justify-content: flex-start;
 }
-.team-list .team-member .git-link {
+.container .team-list .team-member .git-link {
   font-size: 4rem;
   padding-right: 10px;
 }
-.team-list .andy-profile {
+.container .team-list .andy-profile {
   border-bottom: 3px double #333333;
 }
 @media (min-width: 800px) {
-  .team-list .andy-profile {
+  .container .team-list .andy-profile {
     border-bottom: 1px solid #333333;
   }
 }
@@ -302,7 +368,12 @@ header {
   padding-bottom: 0px;
   margin-left: 10px;
   margin-right: 10px;
-  border-bottom: 3px double #333333;
+}
+@media (min-width: 800px) {
+  header {
+    max-width: 1000px;
+    width: 100%;
+  }
 }
 header .nav-opener {
   padding-bottom: 10px;
@@ -310,6 +381,7 @@ header .nav-opener {
   justify-content: space-evenly;
   align-items: center;
   flex-flow: row nowrap;
+  border-bottom: 3px double #333333;
 }
 @media (min-width: 800px) {
   header .nav-opener {
@@ -317,6 +389,7 @@ header .nav-opener {
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
+    width: 98%;
   }
 }
 @media (min-width: 800px) {
@@ -375,13 +448,11 @@ header nav {
 @media (min-width: 800px) {
   header nav {
     max-width: 1000px;
-    width: 100%;
+    width: 98%;
   }
 }
 header nav .nav-link {
-  display: none;
-}
-header nav .nav-link--open {
+  opacity: 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -390,9 +461,14 @@ header nav .nav-link--open {
   margin: 0 auto;
   text-decoration: none;
   font-size: 2rem;
+  font-family: 'Allerta Stencil', sans-serif;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 3px double #333333;
+  border-bottom: 3px double #333333;
+  transition: opacity 0.5s linear;
+}
+header nav .nav-link--open {
+  opacity: 1;
 }
 footer {
   display: flex;
