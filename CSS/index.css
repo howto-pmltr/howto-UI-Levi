@@ -146,6 +146,7 @@ table {
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
+  animation: fadein 4s;
 }
 .container .cta-body .background-img {
   width: 100%;
@@ -240,9 +241,9 @@ table {
 @media (min-width: 800px) {
   .team-list {
     max-width: 1000px;
-    width: 96%;
+    width: 98%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
   }
@@ -251,11 +252,45 @@ table {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media (min-width: 800px) {
+  .team-list .development {
+    max-width: 500px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-right: 3px double #333333;
+  }
+}
 .team-list h2 {
   text-align: center;
   padding-bottom: 20px;
   border-bottom: 3px double #333333;
   margin-bottom: 10px;
+}
+@media (min-width: 800px) {
+  .team-list h2 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.team-list .marketing {
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+@media (min-width: 800px) {
+  .team-list .marketing {
+    padding-top: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 800px) {
+  .team-list .marketing .ui {
+    padding-right: 1px;
+  }
 }
 .team-list .team-member {
   display: flex;
@@ -265,6 +300,14 @@ table {
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #333333;
+}
+@media (min-width: 800px) {
+  .team-list .team-member {
+    max-width: 500px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 .team-list .team-member .profile-text {
   display: flex;
@@ -303,6 +346,11 @@ header {
   margin-left: 10px;
   margin-right: 10px;
   border-bottom: 3px double #333333;
+}
+@media (min-width: 800px) {
+  header {
+    width: 98%;
+  }
 }
 header .nav-opener {
   padding-bottom: 10px;
@@ -363,7 +411,7 @@ header .nav-opener .fa-caret-up {
   display: none;
 }
 header .nav-opener .fa-caret-down {
-  display: none;
+  display: flex;
 }
 header .nav-opener .caret-open {
   display: flex;

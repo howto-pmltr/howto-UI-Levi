@@ -8,14 +8,21 @@
 
     @media @desktop{
         max-width: 1000px;
-        width: 96%;
-        .displayFlex(space-evenly, center);
+        width: 98%;
+        .displayFlex(center, center);
         flex-flow: row nowrap;
     }
 
     .development{
 
         .paddingTandB(20px, 20px);
+        @media @desktop{
+            max-width: 500px;
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+            border-right: 3px double @charcoal;
+        }
     }
 
     h2{
@@ -23,6 +30,28 @@
         padding-bottom: 20px;
         border-bottom: 3px double @charcoal;
         margin-bottom: 10px;
+        @media @desktop{
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+
+    .marketing{
+        .paddingTandB(0px, 20px);
+        @media @desktop{
+            padding-top: 20px;
+            max-width: 500px;
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .ui {
+            @media @desktop{
+                padding-right: 1px;
+            }
+        }
     }
 
     .team-member{
@@ -31,6 +60,13 @@
         flex-flow: row nowrap;
         .paddingTandB(20px, 20px);
         border-bottom: 1px solid @charcoal;
+
+        @media @desktop{
+            max-width: 500px;
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
 
         .profile-text{
             .displayFlex(center, center);
