@@ -357,6 +357,7 @@ table {
 @media (min-width: 800px) {
   .container .team-list .andy-profile {
     border-bottom: 1px solid #333333;
+    padding-bottom: 21px;
   }
 }
 header {
@@ -466,6 +467,7 @@ header nav .nav-link {
   padding-bottom: 10px;
   border-bottom: 3px double #333333;
   transition: opacity 0.5s linear;
+  color: #621295;
 }
 header nav .nav-link--open {
   opacity: 1;
